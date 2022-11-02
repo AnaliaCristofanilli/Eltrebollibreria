@@ -4,11 +4,14 @@ import ItemListContainer from "./components/ItemListContainer";
 import NavbarApp from "./components/NavbarApp";
 
 function App() {
-  const Mensaje = "Bienvenidos a Librería El trébol";
+  const mensaje = "Bienvenidos a Librería El trébol"; //* Las variables siempre van en minuscula
   return (
     <div>
       <NavbarApp />
-      <ItemListContainer Greeting={Mensaje} Contenedor="contenedor" />
+      <ItemListContainer greeting={mensaje} contenedor="contenedor" />
+      {
+        //* Las props siempre van en minuscula!
+      }
     </div>
   );
 }
